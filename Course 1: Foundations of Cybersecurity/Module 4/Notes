@@ -1,0 +1,198 @@
+# Module 4 – Essential Cybersecurity Tools and Technologies
+
+## Overview
+This module introduced several of the core technologies and tools used by cybersecurity professionals to monitor systems, investigate security events, protect organizational assets, and automate repetitive tasks. 
+It also introduced foundational concepts in programming, operating systems, and digital evidence handling.
+
+---
+
+# Learning Objectives
+
+After completing this module, I can:
+- Explain how programming supports cybersecurity operations
+- Differentiate between common operating systems
+- Describe several tools used by security analysts
+- Understand how encryption protects sensitive information
+- Explain the purpose of penetration testing
+- Recognize the importance of preserving digital evidence during investigations
+
+---
+
+# Programming in Cybersecurity
+Programming enables security professionals to automate repetitive tasks, analyze large amounts of data, and improve operational efficiency.
+
+## Python
+Python is one of the most widely used programming languages in cybersecurity because it supports automation, scripting, and data analysis.
+
+Common uses include:
+- Automating security tasks
+- Parsing log files
+- Vulnerability scanning
+- Threat analysis
+- Incident response scripting
+
+Automation reduces manual effort while minimizing the risk of human error.
+
+---
+
+## SQL (Structured Query Language)
+SQL is used to interact with databases.
+
+Security professionals use SQL to:
+- Query stored information
+- Analyze security data
+- Investigate incidents
+- Generate reports
+
+A database is an organized collection of information, while a **data point** is an individual piece of information stored within that database.
+
+---
+
+# Operating Systems
+An operating system provides the interface between users and computer hardware.
+
+The three major operating systems introduced were:
+- Linux: Open-source operating system widely used in servers and cybersecurity environments.
+- Windows: Microsoft's operating system commonly found in enterprise environments.
+- macOS: Apple's operating system designed for Mac computers.
+
+---
+
+## Linux
+Linux plays an especially important role in cybersecurity because it provides powerful command-line tools and extensive customization.
+
+Key concepts include:
+- Open-source software
+- Command-line interface (CLI)
+- Commands used to interact with the operating system
+
+The command line allows analysts to efficiently manage systems, investigate incidents, and automate administrative tasks.
+
+---
+
+# Web Application Vulnerabilities
+A web vulnerability is a weakness in a web application that attackers can exploit to gain unauthorized access, steal data, or deploy malware.
+The OWASP Top 10 is an industry-recognized resource that identifies the most critical web application security risks.
+
+---
+
+# Antivirus Software
+Antivirus (or anti-malware) software detects, prevents, and removes malicious software from systems.
+
+Its primary functions include:
+- Malware detection
+- Virus removal
+- Real-time monitoring
+- Threat prevention
+
+Many antivirus solutions identify threats by comparing files against known malware signatures and suspicious behavior.
+
+---
+
+# Intrusion Detection Systems (IDS)
+An Intrusion Detection System (IDS) continuously monitors systems and network traffic for suspicious activity.
+
+An IDS can detect:
+- Unauthorized access attempts
+- Malicious network traffic
+- Potential intrusions
+- Suspicious behavior
+
+Unlike preventive security controls, an IDS primarily focuses on monitoring and alerting security teams.
+
+---
+
+# Encryption
+Encryption protects sensitive information by converting readable data (**plaintext**) into an unreadable format (**ciphertext**).
+
+### Purpose
+- Protect confidentiality
+- Prevent unauthorized access
+- Secure sensitive communications
+
+Encryption is a fundamental security control used throughout modern information systems.
+
+> **Note:** Encoding and encryption are not the same. Encoding changes data into a standardized format for compatibility, while encryption protects data from unauthorized access.
+
+---
+
+# Penetration Testing
+Penetration testing (pen testing) is a controlled, authorized simulation of a cyberattack used to identify security weaknesses before malicious attackers can exploit them.
+
+Penetration testing helps organizations:
+- Identify vulnerabilities
+- Evaluate security controls
+- Assess organizational risk
+- Improve defensive security
+
+---
+
+# Additional Security Tools
+
+## Security Information and Event Management (SIEM)
+A SIEM platform collects and analyzes logs from multiple systems to help security analysts detect, investigate, and respond to security events.
+SIEM platforms are central to many modern Security Operations Centers (SOCs).
+
+---
+
+## Network Protocol Analyzer (Packet Sniffer)
+A packet sniffer captures and analyzes network traffic.
+
+Security analysts use packet analyzers to:
+- Troubleshoot network issues
+- Investigate attacks
+- Detect suspicious communications
+- Analyze packet-level activity
+
+One of the most widely used packet analyzers is **Wireshark**.
+
+---
+
+# Digital Evidence
+When investigating a security incident, properly preserving digital evidence is essential.
+
+## Protecting and Preserving Evidence
+Security professionals must carefully collect and preserve evidence to maintain its integrity throughout an investigation.
+Improper handling can compromise forensic investigations or legal proceedings.
+
+---
+
+## Order of Volatility
+The Order of Volatility is the recommended sequence for collecting digital evidence based on how quickly information can be lost.
+
+Analysts prioritize collecting the most volatile data first before moving to more permanent forms of storage.
+
+---
+
+# Key Takeaways
+- Programming allows security professionals to automate repetitive tasks and analyze data more efficiently.
+- Python and SQL are foundational technical skills for many cybersecurity roles.
+- Linux is a widely used operating system within cybersecurity because of its flexibility and command-line capabilities.
+- Security tools such as antivirus software, IDS, SIEM platforms, and packet analyzers help organizations detect and respond to threats.
+- Encryption protects the confidentiality of sensitive information.
+- Penetration testing proactively identifies vulnerabilities before attackers can exploit them.
+- Proper evidence preservation is essential during incident response and forensic investigations.
+
+---
+
+# Glossary
+
+- Antivirus Software: Software used to detect, prevent, and remove malware.
+- Database: An organized collection of information.
+- Data Point: A single piece of information stored within a database.
+- Intrusion Detection System (IDS): A monitoring system that detects and alerts on suspicious activity.
+- Linux: An open-source operating system widely used in cybersecurity.
+- Log: A recorded history of events occurring within a system.
+- Network Protocol Analyzer (Packet Sniffer): A tool used to capture and analyze network traffic.
+- Order of Volatility: The recommended order for collecting digital evidence based on how quickly it can disappear.
+- Programming: Creating instructions that allow computers to perform tasks.
+- Protecting and Preserving Evidence: Properly collecting and maintaining digital evidence during an investigation.
+- Security Information and Event Management (SIEM): A platform that collects and analyzes log data to detect security events.
+- SQL: A language used to create, query, and manage databases.
+
+---
+
+# Personal Reflection
+This module connected many of the technologies I will continue using throughout my cybersecurity journey. 
+I found it especially valuable to learn how programming, operating systems, and security tools work together to help analysts detect, investigate, and respond to cyber threats. 
+It also reinforced that cybersecurity isn't centered around a single tool—effective defense relies on combining multiple technologies with strong processes and continuous monitoring.
