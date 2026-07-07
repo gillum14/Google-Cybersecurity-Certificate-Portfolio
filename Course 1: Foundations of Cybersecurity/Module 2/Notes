@@ -1,0 +1,225 @@
+# Module 2 – Common Cyber Attacks and Threat Actors
+
+## Overview
+This module introduced common cybersecurity attack methods and the individuals or groups responsible for carrying them out. 
+It also reinforced how different attack types align with the CISSP security domains and why understanding attacker motivations is essential for defending organizational assets.
+
+---
+
+# Learning Objectives
+
+After completing this module, I can:
+- Identify common cyber attack types
+- Explain how attacks relate to the CISSP security domains
+- Differentiate between various threat actors
+- Recognize attacker motivations and objectives
+- Understand how attacks introduce organizational risk
+
+---
+
+# Common Cyber Attack Types
+
+## Password Attacks
+Password attacks attempt to gain unauthorized access to password-protected systems, accounts, or networks.
+
+### Examples
+- Brute Force Attack
+- Rainbow Table Attack
+
+**CISSP Domain**
+- Communication and Network Security
+
+---
+
+## Social Engineering Attacks
+Social engineering manipulates people into revealing sensitive information or performing actions that compromise security.
+
+### Common Types
+- Phishing
+- Spear Phishing
+- Whaling
+- Smishing
+- Vishing
+- Social Media Phishing
+- Business Email Compromise (BEC)
+- Watering Hole Attack
+- USB Baiting
+- Physical Social Engineering
+
+**CISSP Domain**
+- Security and Risk Management
+
+---
+
+## Physical Attacks
+Physical attacks use hardware or physical access to compromise systems or networks.
+
+### Examples
+- Malicious USB cables
+- Infected flash drives
+- Card cloning
+- Card skimming
+
+**CISSP Domain**
+- Asset Security
+
+---
+
+## Adversarial Artificial Intelligence (AI)
+Adversarial AI manipulates artificial intelligence and machine learning systems to make cyber attacks more effective or difficult to detect.
+
+**CISSP Domains**
+- Communication and Network Security
+- Identity and Access Management
+
+---
+
+## Supply Chain Attacks
+Supply chain attacks exploit vulnerabilities in trusted third-party vendors, software, hardware, or services before they reach the target organization.
+Because organizations rely on numerous external vendors, a single compromised supplier can impact thousands of downstream organizations.
+
+**Related CISSP Domains**
+- Security and Risk Management
+- Security Architecture and Engineering
+- Security Operations
+
+---
+
+## Cryptographic Attacks
+Cryptographic attacks attempt to weaken or bypass encryption methods used to secure communications.
+
+### Examples
+- Birthday Attack
+- Collision Attack
+- Downgrade Attack
+
+**CISSP Domain**
+- Communication and Network Security
+
+---
+
+# Understanding Threat Actors
+A **threat actor** is any individual or group capable of compromising the confidentiality, integrity, or availability of an organization's information systems.
+Understanding attacker motivations allows security professionals to better anticipate threats and implement appropriate defenses.
+
+---
+
+## Advanced Persistent Threats (APTs)
+Highly skilled attackers that conduct long-term, targeted campaigns against high-value organizations.
+
+### Characteristics
+- Well-funded
+- Highly organized
+- Often remain undetected for extended periods
+- Frequently target governments and large enterprises
+
+### Objectives
+- Intellectual property theft
+- Espionage
+- Disruption of critical infrastructure
+
+---
+
+## Insider Threats
+Individuals with legitimate access who intentionally or unintentionally misuse their privileges.
+
+### Common Motivations
+- Sabotage
+- Financial gain
+- Espionage
+- Data theft
+- Unauthorized disclosure of information
+
+---
+
+## Hacktivists
+Threat actors motivated primarily by political, ideological, or social causes.
+
+### Typical Goals
+- Promote social or political agendas
+- Spread propaganda
+- Gain publicity
+- Conduct online demonstrations
+
+---
+
+# Types of Hackers
+
+## Authorized (Ethical) Hackers
+Ethical hackers operate legally with permission to identify vulnerabilities before malicious actors can exploit them.
+Their purpose is to strengthen organizational security.
+
+---
+
+## Semi-Authorized Hackers
+Often referred to as security researchers.
+These individuals identify vulnerabilities and generally disclose them responsibly without exploiting them.
+
+---
+
+## Unauthorized (Unethical) Hackers
+Malicious individuals who illegally access systems for personal, financial, or political gain.
+
+Common objectives include:
+- Stealing confidential information
+- Selling stolen data
+- Deploying malware
+- Financial fraud
+
+---
+
+## Other Threat Actors
+
+### Beginner Attackers
+Less experienced attackers who often use publicly available tools to:
+- Learn hacking techniques
+- Build technical skills
+- Seek revenge
+- Exploit known vulnerabilities
+
+### Contract Hackers
+Individuals hired to perform cyber operations.
+Depending on the work performed, they may operate legally or illegally.
+
+### Vigilante Hackers
+Hackers who believe they are protecting others by targeting malicious actors without official authorization.
+
+---
+
+# Key Takeaways
+- Cyber attacks target both technical systems and human behavior.
+- Social engineering remains one of the most effective attack methods because it exploits trust rather than technology.
+- Supply chain attacks demonstrate that an organization's security depends on the security of its vendors and partners.
+- Threat actors vary widely in skill level, motivation, and objectives.
+- Understanding attacker behavior is an important part of risk management and defensive security.
+
+---
+
+# Glossary
+- Adversarial AI: Manipulation of AI and machine learning technologies to improve cyber attacks.
+- Business Email Compromise (BEC): A phishing attack where an attacker impersonates a trusted source for financial gain.
+- CISSP: Certified Information Systems Security Professional certification.
+- Computer Virus: Malicious code that disrupts systems or damages data.
+- Cryptographic Attack: An attack targeting encrypted communications.
+- Hacker: A person who gains access to computer systems, networks, or data.
+- Malware: Software designed to damage or compromise systems.
+- Password Attack: An attempt to gain unauthorized access using passwords.
+- Phishing: Fraudulent communication intended to steal sensitive information.
+- Physical Attack: An attack involving physical devices or access to compromise security.
+- Physical Social Engineering: Impersonating trusted individuals to gain physical access.
+- Social Engineering: Manipulating people into revealing confidential information.
+- Social Media Phishing: Gathering information from social media to improve phishing attacks.
+- Spear Phishing: A highly targeted phishing attack aimed at a specific individual or organization.
+- Supply Chain Attack: Exploiting vulnerabilities within third-party vendors or suppliers.
+- USB Baiting: Leaving infected USB devices for victims to connect to their computers.
+- Vishing: Voice-based phishing conducted over phone calls or voice communications.
+- Watering Hole Attack: Compromising websites frequently visited by a target group.
+
+---
+
+# Personal Reflection
+
+This module reinforced that cybersecurity is about much more than protecting computers—it's equally about understanding people and attacker behavior. 
+I was especially surprised by how many successful attacks rely on social engineering rather than sophisticated technical exploits.
+Learning about threat actors and their motivations also highlighted that attacks are rarely random. 
+Whether motivated by financial gain, political ideology, espionage, or curiosity, understanding why attackers operate the way they do helps security professionals make more informed defensive decisions.
