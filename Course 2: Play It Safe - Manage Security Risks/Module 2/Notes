@@ -1,1 +1,288 @@
+# Module 2 – Managing Risk, Security Frameworks, and Security Audits
 
+## Overview
+This module expanded on the core concepts of cybersecurity risk management by exploring threats, vulnerabilities, security frameworks, security controls, the CIA Triad, OWASP security principles, and the role of security audits. It emphasized how organizations use structured frameworks and industry best practices to reduce risk, strengthen security posture, and maintain regulatory compliance.
+
+---
+
+# Learning Objectives
+
+After completing this module, I can:
+- Differentiate between threats, risks, and vulnerabilities
+- Explain common risk management strategies
+- Describe how security frameworks and controls work together
+- Apply the CIA Triad to organizational security
+- Understand key OWASP secure design principles
+- Explain the purpose and process of security audits
+- Recognize the NIST Cybersecurity Framework core functions
+
+---
+
+# Risk Management
+Organizations protect both digital and physical assets by identifying, evaluating, and managing cybersecurity risks.
+
+## Examples of Assets
+
+### Digital Assets
+- Personally Identifiable Information (PII)
+- Social Security Numbers (SSNs)
+- Banking information
+- Employee and customer records
+
+### Physical Assets
+- Servers
+- Desktop computers
+- Office facilities
+- Payment kiosks
+
+---
+
+## Risk Management Strategies
+
+| Strategy | Description |
+|----------|-------------|
+| **Acceptance** | Accept the risk when mitigation costs outweigh the impact. |
+| **Avoidance** | Eliminate activities that introduce the risk. |
+| **Transference** | Shift responsibility for the risk to a third party (e.g., insurance or vendors). |
+| **Mitigation** | Reduce the likelihood or impact of a risk through security controls. |
+
+Organizations often use frameworks such as **NIST RMF** and **HITRUST** to formalize their risk management processes.
+
+---
+
+# Threats, Risks, and Vulnerabilities
+
+## Threat
+Any circumstance or event capable of negatively affecting organizational assets.
+
+Examples include:
+- Insider threats
+- Advanced Persistent Threats (APTs)
+
+---
+
+## Risk
+The likelihood that a threat will exploit a vulnerability and impact the confidentiality, integrity, or availability of an asset.
+
+Common sources of organizational risk include:
+- External attackers
+- Insider threats
+- Legacy systems
+- Third-party vendors
+- Unpatched software
+- Software licensing and compliance issues
+
+---
+
+## Vulnerability
+A weakness that can be exploited by a threat actor.
+
+Examples discussed in this module include:
+- ProxyLogon
+- ZeroLogon
+- Log4Shell
+- PetitPotam
+- Server-Side Request Forgery (SSRF)
+- Security Logging and Monitoring Failures
+
+Effective vulnerability management requires:
+- Continuous monitoring
+- Timely patching
+- Regular updates
+- Risk assessments
+
+---
+
+# Security Frameworks and Controls
+Security frameworks provide structured guidance for managing cybersecurity risk, while security controls are the safeguards used to implement those frameworks.
+
+---
+
+## Cyber Threat Framework (CTF)
+Developed by the U.S. government to provide a common language for describing cyber threat activity and improving information sharing.
+
+---
+
+## ISO/IEC 27001
+An internationally recognized framework that helps organizations establish and maintain an Information Security Management System (ISMS).
+
+It focuses on protecting:
+- Financial information
+- Intellectual property
+- Employee data
+- Third-party information
+
+---
+
+# Security Controls
+
+## Physical Controls
+
+Examples include:
+- Security guards
+- Locks and gates
+- CCTV cameras
+- Access badges
+
+---
+
+## Technical Controls
+
+Examples include:
+- Firewalls
+- Multi-Factor Authentication (MFA)
+- Antivirus software
+
+---
+
+## Administrative Controls
+
+Examples include:
+- Separation of duties
+- Authorization policies
+- Asset classification
+- Security procedures
+
+---
+
+# Applying the CIA Triad
+The CIA Triad remains one of the most important security models for protecting organizational assets.
+
+## Confidentiality
+Ensures only authorized users can access sensitive information.
+
+Common implementations include:
+- Least privilege
+- Access controls
+- Authentication
+
+---
+
+## Integrity
+Ensures information remains accurate, authentic, and trustworthy.
+
+Common protections include:
+- Cryptography
+- Encryption
+- Integrity verification
+
+---
+
+## Availability
+Ensures authorized users can access systems and information when needed.
+
+Examples include:
+- System redundancy
+- Reliable infrastructure
+- Remote access solutions
+- Disaster recovery planning
+
+---
+
+# OWASP Security Principles
+This module introduced additional secure design principles recommended by the Open Worldwide Application Security Project (OWASP).
+
+### Core Principles
+- Minimize Attack Surface Area
+- Principle of Least Privilege
+- Defense in Depth
+- Separation of Duties
+- Keep Security Simple
+- Fix Security Issues Correctly
+
+### Additional Principles
+
+#### Establish Secure Defaults
+Systems should be secure immediately after installation without requiring additional configuration.
+
+#### Fail Securely
+If a security control fails, it should default to the safest possible state.
+
+#### Don't Trust Services
+Organizations should verify the security of third-party systems rather than assuming they are trustworthy.
+
+#### Avoid Security by Obscurity
+Security should rely on strong design and controls—not secrecy.
+
+---
+
+# The NIST Cybersecurity Framework (CSF)
+This module reinforced the six core functions of the NIST Cybersecurity Framework.
+
+| Function | Purpose |
+|----------|---------|
+| **Identify** | Understand assets, risks, and business environment. |
+| **Protect** | Implement safeguards to reduce cybersecurity risk. |
+| **Detect** | Identify potential cybersecurity events. |
+| **Respond** | Contain and manage security incidents. |
+| **Recover** | Restore systems and normal operations after an incident. |
+
+---
+
+# Security Audits
+A security audit evaluates an organization's security controls, policies, and procedures against internal standards and external regulations.
+
+---
+
+## Purpose of a Security Audit
+- Evaluate existing security controls
+- Verify regulatory compliance
+- Identify weaknesses
+- Improve organizational security posture
+- Recommend remediation strategies
+
+---
+
+## Audit Process
+1. Define the audit scope
+2. Conduct a risk assessment
+3. Evaluate systems and controls
+4. Develop mitigation recommendations
+5. Report findings to stakeholders
+
+---
+
+## Typical Audit Scope
+- User permissions
+- Existing security controls
+- Policies and procedures
+- Technology inventory
+- Compliance requirements
+
+---
+
+# Key Takeaways
+- Effective cybersecurity begins with understanding assets, threats, risks, and vulnerabilities.
+- Security frameworks provide guidance, while controls implement protection.
+- The CIA Triad remains the foundation of secure system design.
+- OWASP principles encourage secure application development and defense-in-depth strategies.
+- The NIST CSF provides a structured approach for managing cybersecurity risk.
+- Security audits help organizations evaluate compliance, strengthen controls, and improve overall security posture.
+
+---
+
+# Glossary
+
+| Term | Definition |
+|------|------------|
+| Asset | Anything valuable that requires protection. |
+| Attack Vector | A method used by attackers to gain unauthorized access. |
+| Authentication | Verifying the identity of a user or system. |
+| Authorization | Granting access to specific resources after authentication. |
+| Availability | Ensuring authorized users have timely access to information. |
+| Biometrics | Physical characteristics used to verify identity. |
+| CIA Triad | Security model consisting of Confidentiality, Integrity, and Availability. |
+| Encryption | Converting readable information into protected ciphertext. |
+| NIST CSF | Framework for managing cybersecurity risk. |
+| OWASP | Organization promoting secure software development practices. |
+| Risk | The likelihood that a threat will exploit a vulnerability. |
+| Security Audit | A formal review of an organization's security controls and practices. |
+| Security Controls | Safeguards used to reduce cybersecurity risk. |
+| Security Framework | Structured guidance for managing cybersecurity risk. |
+| Security Posture | An organization's overall ability to defend its assets. |
+| Threat | Any event or circumstance capable of causing harm to an asset. |
+
+---
+
+# Personal Reflection
+This module helped me connect several foundational cybersecurity concepts into a broader risk management mindset. I gained a better understanding of how organizations use frameworks like NIST CSF and ISO/IEC 27001 alongside technical, physical, and administrative controls to reduce risk. Learning about security audits and the NIST Cybersecurity Framework also gave me a clearer picture of how security analysts evaluate an organization's defenses and continuously improve its overall security posture.
