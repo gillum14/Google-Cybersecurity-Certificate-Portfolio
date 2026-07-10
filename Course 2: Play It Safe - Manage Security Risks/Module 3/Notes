@@ -1,0 +1,277 @@
+# Course 2 - Module 3: Security Information and Event Management (SIEM)
+
+## Overview
+In this module, I learned how Security Information and Event Management (SIEM) platforms help organizations collect, analyze, and monitor security logs to detect and respond to cyber threats. I explored the differences between cloud-hosted and cloud-native SIEM solutions, compared open-source and proprietary cybersecurity tools, and learned how analysts use SIEM dashboards to identify suspicious activity and investigate security incidents. The module also introduced Security Orchestration, Automation, and Response (SOAR), demonstrating how automation is becoming an increasingly important part of modern security operations.
+
+---
+
+# Learning Objectives
+
+After completing this module, I can:
+- Explain the purpose of SIEM platforms in cybersecurity
+- Describe how SIEM tools collect and analyze log data
+- Differentiate between cloud-hosted and cloud-native SIEM solutions
+- Compare open-source and proprietary cybersecurity tools
+- Identify the purpose of common SIEM dashboards
+- Explain how SOAR improves incident response through automation
+
+---
+
+# SIEM (Security Information and Event Management)
+
+## What is a SIEM?
+A **Security Information and Event Management (SIEM)** platform collects, centralizes, and analyzes log data from multiple systems to identify potential security threats.
+
+Common SIEM functions include:
+- Collecting security logs
+- Monitoring events in real time
+- Detecting suspicious behavior
+- Alerting security teams
+- Supporting investigations and incident response
+
+---
+
+# The Future of SIEM
+Modern SIEM platforms continue evolving to support cloud environments and advanced automation.
+
+## Cloud-hosted SIEM
+Cloud-hosted SIEM solutions are maintained by a vendor and accessed through the internet.
+
+**Benefits:**
+- No on-premises infrastructure
+- Vendor-managed updates
+- Lower maintenance requirements
+
+Examples:
+- Splunk Cloud
+- Chronicle
+
+---
+
+## Cloud-native SIEM
+Cloud-native SIEM platforms are built specifically for cloud computing environments.
+
+**Benefits:**
+- Scalability
+- High availability
+- Flexibility
+- Optimized cloud performance
+
+---
+
+## Emerging Trends
+
+Future SIEM platforms are expected to increasingly incorporate:
+- Artificial Intelligence (AI)
+- Machine Learning (ML)
+- Internet of Things (IoT) monitoring
+- Cloud integration
+- Security automation
+
+These advancements help analysts detect threats faster while reducing manual workloads.
+
+---
+
+# Security Orchestration, Automation, and Response (SOAR)
+SOAR combines security tools and automated workflows to respond to security incidents more efficiently.
+
+**Benefits include:**
+- Automated incident response
+- Faster remediation
+- Reduced manual effort
+- More time for analysts to investigate complex threats
+
+---
+
+# Open-Source vs. Proprietary Security Tools
+
+## Open-Source Tools
+Open-source software is publicly available and can be modified by users.
+
+**Characteristics:**
+- Free or low cost
+- Community supported
+- Highly customizable
+- Source code is publicly available
+
+**Examples:**
+- Linux
+- Suricata
+
+---
+
+## Proprietary Tools
+Proprietary software is owned and maintained by a company.
+
+**Characteristics:**
+- Commercial licensing
+- Vendor support
+- Limited customization
+- Regular vendor updates
+
+**Examples:**
+- Splunk Enterprise
+- Splunk Cloud
+- Chronicle
+
+---
+
+# Common Cybersecurity Tools
+
+## Linux
+Linux is an open-source operating system commonly used throughout cybersecurity.
+
+Common uses include:
+- System administration
+- Security testing
+- Automation
+- Command-line operations
+
+---
+
+## Suricata
+Suricata is an open-source network monitoring and threat detection tool.
+
+It is used to:
+- Inspect network traffic
+- Detect suspicious activity
+- Generate security logs
+- Integrate with SIEM platforms
+
+---
+
+# Splunk Dashboards
+
+## Security Posture Dashboard
+Provides real-time visibility into security events and trends.
+
+Used to monitor:
+- Suspicious IP activity
+- Security alerts
+- Overall security posture
+
+---
+
+## Executive Summary Dashboard
+Provides a high-level overview of organizational security.
+
+Useful for:
+- Reporting to leadership
+- Tracking security trends
+- Monitoring overall security health
+
+---
+
+## Incident Review Dashboard
+Displays security events surrounding an incident.
+
+Helps analysts:
+- Investigate alerts
+- Build event timelines
+- Prioritize investigations
+
+---
+
+## Risk Analysis Dashboard
+Identifies users, systems, and IP addresses with elevated risk.
+
+Examples include:
+- After-hours logins
+- Unusual network traffic
+- High-risk assets
+
+---
+
+# Chronicle Dashboards
+
+## Enterprise Insights Dashboard
+
+Displays:
+- Recent alerts
+- Indicators of Compromise (IOCs)
+- Threat confidence scores
+- Severity ratings
+
+---
+
+## Data Ingestion and Health Dashboard
+
+Monitors:
+- Log ingestion
+- Processing success rates
+- Health of data sources
+
+---
+
+## IOC Matches Dashboard
+
+Tracks:
+- Malicious IP addresses
+- Suspicious domains
+- Threat trends
+- Device indicators of compromise
+
+---
+
+## Main Dashboard
+
+Provides an overall view of:
+- Event activity
+- Alerts
+- Data ingestion
+- Security trends
+
+---
+
+## Rule Detections Dashboard
+Displays alerts generated by detection rules.
+
+Helps analysts:
+- Identify recurring threats
+- Evaluate detection rules
+- Prioritize response efforts
+
+---
+
+## User Sign-In Overview Dashboard
+Monitors authentication activity across the organization.
+
+Useful for identifying:
+- Impossible travel events
+- Multiple login locations
+- Suspicious user behavior
+
+---
+
+# Key Concepts Learned
+- SIEM platforms centralize security monitoring and log analysis.
+- Cloud-native SIEM solutions are becoming increasingly common.
+- SOAR improves efficiency by automating repetitive security tasks.
+- Open-source tools are widely used and trusted within the cybersecurity community.
+- SIEM dashboards help analysts quickly identify, investigate, and prioritize security incidents.
+
+---
+
+# Key Terms
+
+| Term | Definition |
+|------|------------|
+| **SIEM** | A platform that collects and analyzes security logs to detect threats. |
+| **SOAR** | A collection of tools and workflows that automate security operations and incident response. |
+| **Chronicle** | Google's cloud-native SIEM platform. |
+| **Splunk Enterprise** | A self-hosted SIEM platform used for log collection and analysis. |
+| **Splunk Cloud** | A cloud-hosted version of Splunk managed by the vendor. |
+| **Log** | A record of events occurring within an organization's systems. |
+| **Incident Response** | The process of identifying, containing, investigating, and recovering from a security incident. |
+| **Playbook** | A documented set of procedures used to respond to security events. |
+| **Metrics** | Measurements used to evaluate system or security performance. |
+| **Operating System (OS)** | Software that manages hardware resources and provides an interface between users and applications. |
+
+---
+
+# Personal Takeaways
+- Learned how SIEM platforms provide centralized visibility into an organization's security environment.
+- Gained an understanding of how security analysts use dashboards to investigate suspicious activity and prioritize incidents.
+- Became familiar with industry-standard SIEM platforms including Splunk and Google Chronicle.
+- Learned how SOAR automates repetitive security tasks and supports faster incident response.
+- Built a strong foundation for future hands-on experience with SIEM tools, log analysis, and threat detection.
