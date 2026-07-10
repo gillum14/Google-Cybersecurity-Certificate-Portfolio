@@ -1,0 +1,448 @@
+# Course 3 Module 4: Network Security & Hardening
+
+## Overview
+This module focused on methods used to strengthen systems and networks against attacks. Topics covered included brute force attacks, operating system hardening, vulnerability assessment using virtual machines and sandboxes, network security tools, cloud security, and cryptography.
+The goal of security hardening is to reduce vulnerabilities, minimize attack surfaces, and implement multiple layers of protection through a defense-in-depth approach.
+
+---
+
+# Brute Force Attacks
+
+## Overview
+A brute force attack is a trial-and-error method used by attackers to discover private information, such as usernames and passwords.
+Because authentication credentials are one of the most common security controls, they are frequent targets for attackers attempting to gain unauthorized access.
+
+---
+
+## Types of Brute Force Attacks
+
+### Simple Brute Force Attack
+A simple brute force attack occurs when attackers manually or automatically attempt different combinations of usernames and passwords until they discover valid credentials.
+
+Example:
+- Attempting multiple password combinations against a login portal.
+
+---
+
+### Dictionary Attack
+A dictionary attack uses a predefined list of commonly used passwords, leaked credentials, or words to attempt authentication.
+
+Attackers commonly use:
+- Previously leaked passwords
+- Common password patterns
+- Password dictionaries
+
+These attacks are more efficient than manually guessing credentials.
+
+---
+
+# Vulnerability Assessment
+Before security incidents occur, organizations perform vulnerability assessments to identify weaknesses within systems and applications.
+Security analysts commonly use virtual machines and sandbox environments to safely test suspicious files, analyze malware, and simulate attacks.
+
+---
+
+# Virtual Machines (VMs)
+A virtual machine (VM) is a software-based version of a physical computer.
+
+VMs provide security benefits by allowing analysts to:
+- Run potentially dangerous code in isolation
+- Test malware safely
+- Analyze suspicious files
+- Restore systems to previous states
+- Perform security testing without affecting production environments
+
+### Risks of Virtual Machines
+Although VMs provide isolation, they are not completely risk-free.
+
+Potential risks include:
+- VM escape attacks
+- Malware accessing the host operating system
+
+---
+
+# Sandbox Environments
+A sandbox is an isolated testing environment used to safely execute software or analyze suspicious activity.
+
+Common uses include:
+- Testing software patches
+- Identifying vulnerabilities
+- Analyzing malicious files
+- Simulating attack scenarios
+
+Attackers may create malware capable of detecting sandbox environments and changing behavior to avoid detection.
+
+---
+
+# Preventing Brute Force Attacks
+Organizations use multiple security controls to reduce the risk of brute force attacks.
+
+## Hashing and Salting
+
+### Hashing
+Hashing converts information into a unique value used to verify integrity.
+
+Characteristics:
+- One-way process
+- Original information cannot be retrieved from the hash
+- Protects stored passwords
+
+### Salting
+Salting adds random characters to passwords before hashing.
+
+Benefits:
+- Increases password complexity
+- Prevents attackers from using precomputed hash databases
+- Makes password cracking more difficult
+
+---
+
+## Multi-Factor Authentication (MFA)
+Multi-factor authentication requires users to verify their identity using multiple authentication methods.
+
+Authentication factors may include:
+- Something you know:
+  - Password
+  - PIN
+
+- Something you have:
+  - Phone
+  - Security token
+
+- Something you are:
+  - Fingerprint
+  - Facial recognition
+
+Two-factor authentication (2FA) uses exactly two authentication methods.
+
+---
+
+## CAPTCHA and reCAPTCHA
+CAPTCHA helps determine whether a user is human or an automated program.
+
+Benefits:
+- Prevents automated login attempts
+- Reduces bot activity
+- Helps prevent brute force attacks
+
+Google reCAPTCHA provides additional protection against malicious automation.
+
+---
+
+## Password Policies
+Organizations use password policies to enforce secure authentication practices.
+
+Policies may include:
+- Minimum password length
+- Password complexity requirements
+- Password expiration requirements
+- Password reuse restrictions
+- Account lockout after failed attempts
+
+---
+
+# Network Security Applications
+
+## Defense in Depth
+Defense in depth is a security strategy that uses multiple layers of protection.
+Instead of relying on one security control, organizations combine multiple technologies to reduce risk.
+
+Examples:
+- Firewalls
+- Intrusion Detection Systems
+- Intrusion Prevention Systems
+- SIEM platforms
+
+---
+
+# Firewalls
+A firewall monitors and controls network traffic based on predefined rules.
+
+Firewalls can allow or block traffic based on:
+- IP addresses
+- Port numbers
+- Protocols
+- Application information
+
+## Types of Firewalls
+
+### Stateless Firewall
+
+A stateless firewall:
+- Uses predefined rules
+- Does not track active connections
+- Examines packets individually
+
+---
+
+### Stateful Firewall
+
+A stateful firewall:
+- Tracks active connections
+- Maintains a state table
+- Can identify legitimate return traffic
+
+---
+
+### Next Generation Firewall (NGFW)
+
+A next generation firewall provides advanced security features including:
+- Deep packet inspection
+- Application awareness
+- Intrusion prevention
+- Malware detection
+- DNS filtering
+
+---
+
+# Intrusion Detection System (IDS)
+An intrusion detection system monitors network activity and alerts administrators about possible threats.
+
+IDS systems:
+- Analyze network traffic
+- Detect known attack signatures
+- Identify suspicious behavior
+- Generate alerts
+
+Limitations:
+- Does not block attacks
+- May miss unknown threats
+- Can generate false positives
+
+---
+
+# Intrusion Prevention System (IPS)
+An intrusion prevention system detects and actively blocks suspicious activity.
+
+IPS capabilities include:
+- Blocking malicious traffic
+- Dropping suspicious packets
+- Blocking known attack sources
+
+Limitations:
+- Can block legitimate traffic
+- Failure can interrupt network connectivity
+- Requires careful configuration
+
+---
+
+# Full Packet Capture
+Full packet capture devices record network traffic for analysis.
+
+Security professionals use packet captures to:
+- Investigate incidents
+- Analyze alerts
+- Identify malicious activity
+
+---
+
+# Security Information and Event Management (SIEM)
+A SIEM system collects and analyzes security logs from multiple sources.
+
+Sources include:
+- Firewalls
+- IDS/IPS systems
+- VPNs
+- DNS logs
+- Proxy servers
+
+SIEM provides:
+- Centralized monitoring
+- Real-time alerts
+- Security event correlation
+- Incident investigation support
+
+This centralized view is often called a "single pane of glass."
+
+Common SIEM platforms:
+- Splunk
+- Google Chronicle
+
+---
+
+# Cloud Security
+Cloud environments introduce unique security considerations.
+
+Important areas include:
+- Identity and access management
+- Configuration management
+- Attack surface reduction
+- Visibility and monitoring
+- Shared responsibility
+
+---
+
+# Identity and Access Management (IAM)
+IAM manages digital identities and controls access to cloud resources.
+
+Security concerns include:
+- Incorrect permissions
+- Excessive privileges
+- Misconfigured user roles
+
+Proper IAM helps ensure users only access resources necessary for their role.
+
+---
+
+# Cloud Configuration
+Misconfigured cloud services are one of the most common causes of cloud security issues.
+
+Security practices include:
+- Proper permissions
+- Secure configurations
+- Regular reviews
+- Compliance checks
+
+---
+
+# Cloud Attack Surface
+Every cloud service, application, or endpoint increases the organization's attack surface.
+
+Security teams must:
+- Identify exposed services
+- Remove unnecessary resources
+- Monitor access points
+
+---
+
+# Zero-Day Attacks
+A zero-day attack exploits a previously unknown vulnerability.
+
+Cloud providers often have advanced capabilities to:
+- Identify vulnerabilities
+- Patch infrastructure
+- Migrate workloads
+- Reduce customer impact
+
+---
+
+# Shared Responsibility Model
+The shared responsibility model defines security responsibilities between cloud providers and customers.
+
+## Cloud Service Provider Responsibilities
+
+The CSP is responsible for:
+- Physical data centers
+- Hardware
+- Hypervisors
+- Cloud infrastructure
+
+## Customer Responsibilities
+
+Customers are responsible for:
+- User permissions
+- Data protection
+- Application security
+- Cloud configurations
+
+---
+
+# Cloud Security Hardening
+
+## Identity Access Management (IAM)
+IAM controls user access and permissions within cloud environments.
+
+---
+
+## Hypervisors
+A hypervisor allows multiple virtual machines to run on shared hardware.
+
+Types:
+
+### Type 1 Hypervisor
+
+Runs directly on hardware.
+
+Example:
+- VMware ESXi
+
+### Type 2 Hypervisor
+
+Runs on top of an operating system.
+
+Example:
+- VirtualBox
+
+---
+
+## Virtual Machine Escape
+A VM escape occurs when an attacker breaks out of a virtual machine and gains access to the host system.
+
+---
+
+# Baselining
+A baseline is a documented configuration standard used for comparison.
+
+Examples:
+- Secure system configurations
+- Access restrictions
+- Encryption settings
+- Security monitoring requirements
+
+Baselines help identify unauthorized changes.
+
+---
+
+# Cryptography in Cloud Security
+
+Cryptography protects cloud data through:
+- Encryption
+- Secure key management
+- Data integrity controls
+
+Encryption converts readable data (plaintext) into unreadable data (ciphertext).
+Only users with the correct encryption key can decrypt the information.
+
+---
+
+# Cryptographic Erasure
+Cryptographic erasure, also known as crypto-shredding, destroys encryption keys to make encrypted data permanently inaccessible.
+This is useful when securely deleting cloud data.
+
+---
+
+# Key Management
+Encryption keys must be protected to maintain data security.
+
+Common technologies include:
+
+## Trusted Platform Module (TPM)
+
+A hardware chip that securely stores:
+- Passwords
+- Certificates
+- Encryption keys
+
+---
+
+## Cloud Hardware Security Module (CloudHSM)
+A dedicated device used to securely store cryptographic keys and perform encryption operations.
+
+---
+
+# Key Takeaways
+- Brute force attacks attempt to discover credentials through repeated guessing.
+- MFA, password policies, hashing, salting, and CAPTCHA reduce authentication risks.
+- Virtual machines and sandboxes allow analysts to safely test suspicious activity.
+- Defense in depth uses multiple security layers to protect networks.
+- Firewalls, IDS, IPS, and SIEM tools help detect and respond to threats.
+- Cloud security requires understanding the shared responsibility model.
+- IAM, secure configurations, encryption, and key management are critical cloud security practices.
+- Security hardening reduces vulnerabilities and minimizes attack surfaces.
+
+---
+
+# Glossary Terms
+
+| Term | Definition |
+|---|---|
+| Baseline Configuration | A documented set of specifications used as a reference for system builds and updates |
+| Hardware | Physical components of a computer system |
+| Multi-Factor Authentication (MFA) | Authentication requiring multiple verification methods |
+| Network Log Analysis | Reviewing network logs to identify security events |
+| Operating System (OS) | Software that manages computer hardware and user interaction |
+| Patch Update | Software update that fixes vulnerabilities |
+| Penetration Testing | Simulated attack used to identify vulnerabilities |
+| Security Hardening | Process of reducing vulnerabilities and attack surface |
+| SIEM | System that collects and analyzes security event data |
+| World-Writable File | File that can be modified by any user |
