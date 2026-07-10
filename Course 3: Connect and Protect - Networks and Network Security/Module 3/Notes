@@ -1,0 +1,311 @@
+# Course 3: Network Security  
+## Module 3: Network Attacks and Intrusion Analysis
+
+**Objective:**  
+Understand common network attacks, how attackers compromise systems, and how security analysts identify and mitigate intrusion attempts.
+
+---
+
+# Intrusions and Network Attacks
+
+## Overview
+Networks contain vulnerabilities that malicious actors attempt to exploit. Attackers may have different motivations including financial gain, political goals, personal reasons, or disruption of an organization.
+Security analysts must continuously monitor networks, identify vulnerabilities, and respond quickly to reduce the impact of attacks.
+
+Common intrusion methods include:
+- Network interception attacks
+- Backdoor attacks
+- Denial of Service (DoS) attacks
+- Distributed Denial of Service (DDoS) attacks
+- Packet sniffing
+- IP spoofing
+
+---
+
+# Network Interception Attacks
+
+## Definition
+Network interception attacks occur when attackers capture, modify, or interfere with data traveling across a network.
+Attackers may use packet sniffing tools to capture network traffic and inspect sensitive information.
+
+Potential impacts include:
+- Theft of credentials or sensitive data
+- Modification of communications
+- Injection of malicious code
+- Disruption of network operations
+
+**Example:**  
+An attacker intercepts a financial transaction and changes the destination account information before the transaction completes.
+
+---
+
+# Backdoor Attacks
+
+## Definition
+A backdoor is a method of bypassing normal security controls to gain unauthorized access to a system.
+
+Backdoors may be:
+- Intentionally created for administrative purposes
+- Installed by attackers after compromising a system
+
+Attackers can use backdoors to:
+- Install malware
+- Steal information
+- Change security settings
+- Maintain persistent access
+- Launch additional attacks
+
+---
+
+# Impact of Network Attacks
+
+## Financial Impact
+
+Cyber attacks can cause:
+- Loss of business operations
+- Lost revenue
+- Recovery costs
+- Legal expenses
+- Ransomware-related costs
+
+## Reputation Impact
+
+Security incidents can result in:
+- Loss of customer trust
+- Damage to company reputation
+- Loss of business to competitors
+
+## Public Safety Impact
+
+Attacks against critical infrastructure can affect:
+- Power systems
+- Water systems
+- Government networks
+- Defense systems
+
+---
+
+# Network Protocol Analyzers
+
+## Definition
+Network protocol analyzers are tools used to capture and analyze network traffic.
+
+Common tools include:
+- Wireshark
+- tcpdump
+- SolarWinds NetFlow Traffic Analyzer
+- Azure Network Watcher
+
+Security analysts use these tools to:
+- Monitor network activity
+- Identify suspicious traffic
+- Troubleshoot network issues
+- Establish network baselines
+
+Attackers may also use packet analyzers to capture sensitive information such as usernames and passwords.
+
+---
+
+# tcpdump
+
+## Definition
+tcpdump is a command-line network protocol analyzer used to capture and inspect network traffic.
+
+Features:
+- Lightweight
+- Open-source
+- Uses the libpcap library
+- Available on Linux, Unix, and macOS
+
+tcpdump displays:
+- Timestamp
+- Source IP address
+- Source port
+- Destination IP address
+- Destination port
+
+---
+
+# tcpdump Uses
+
+Security analysts use tcpdump to:
+- Monitor traffic patterns
+- Detect malicious activity
+- Investigate network incidents
+- Troubleshoot performance issues
+- Create traffic baselines
+
+---
+
+# Denial of Service (DoS) Attacks
+
+## Definition
+A Denial of Service (DoS) attack prevents legitimate users from accessing a system by overwhelming a network or server with traffic.
+
+Effects include:
+- Service outages
+- Loss of productivity
+- Financial damage
+- Customer disruption
+
+---
+
+# Distributed Denial of Service (DDoS) Attacks
+
+## Definition
+A Distributed Denial of Service (DDoS) attack uses multiple compromised devices to overwhelm a target system.
+
+These compromised devices form a:
+
+## Botnet
+A botnet is a collection of malware-infected devices controlled by a threat actor known as a bot-herder.
+
+Botnets are used to:
+- Send large amounts of traffic
+- Overload systems
+- Hide the attacker’s identity
+
+---
+
+# 2016 DNS DDoS Attack
+
+## Overview
+In 2016, a major DNS provider experienced a large-scale DDoS attack.
+Attackers used a botnet to send millions of DNS requests, overwhelming the provider’s systems.
+
+Impact:
+- DNS services became unavailable
+- Multiple websites experienced outages
+- Millions of users were affected
+
+Key lessons:
+
+Organizations need:
+- Redundant systems
+- Network monitoring
+- DDoS mitigation strategies
+
+---
+
+# Packet Sniffing
+
+## Definition
+Packet sniffing is the process of capturing and analyzing network packets traveling across a network.
+
+Attackers may use packet sniffing to collect:
+- Usernames
+- Passwords
+- Personal information
+- Network details
+
+---
+
+# Passive vs Active Packet Sniffing
+
+## Passive Packet Sniffing
+Captures network traffic without modifying data.
+
+Example:
+Monitoring traffic through a network hub.
+
+## Active Packet Sniffing
+Manipulates network traffic while capturing information.
+
+---
+
+# IP Spoofing
+
+## Definition
+IP spoofing occurs when an attacker changes the source IP address of a packet to impersonate another device.
+
+Attackers use IP spoofing to:
+- Hide their identity
+- Bypass security controls
+- Launch network attacks
+
+---
+
+# On-Path Attack
+
+## Definition
+An on-path attack occurs when an attacker positions themselves between two trusted systems and intercepts communication.
+
+Also known as:
+- Man-in-the-middle attack
+- Meddler-in-the-middle attack
+
+Attackers may:
+- Capture credentials
+- Modify communications
+- Redirect traffic
+
+Protection:
+- Encryption
+- TLS
+- HTTPS
+
+---
+
+# Smurf Attack
+
+## Definition
+A smurf attack combines IP spoofing with ICMP flooding.
+
+Attack process:
+1. Attacker obtains a victim’s IP address.
+2. Attacker sends spoofed ICMP packets.
+3. Packets are distributed across the network.
+4. Responses overwhelm the target system.
+
+Protection:
+- Next-generation firewalls
+- Network monitoring
+- Traffic anomaly detection
+
+---
+
+# Common Attack Terms
+
+## Ping of Death
+A DoS attack caused by sending oversized ICMP packets larger than the system can process.
+
+## ICMP Flood
+A DoS attack where attackers send large amounts of ICMP requests to overwhelm a system.
+
+## SYN Flood Attack
+A DoS attack that abuses the TCP handshake by sending large numbers of SYN requests without completing connections.
+
+## Replay Attack
+An attack where captured network packets are resent later to trick a system.
+
+---
+
+# Defense in Depth
+
+## Definition
+Defense in depth is a security strategy that uses multiple layers of protection instead of relying on a single security control.
+
+Examples:
+- Firewalls
+- Encryption
+- Access controls
+- Monitoring systems
+- Intrusion detection systems
+
+---
+
+# Module 3 Key Takeaways
+- Attackers use multiple techniques to compromise networks.
+- Packet sniffing allows attackers to capture network traffic.
+- IP spoofing allows attackers to impersonate trusted devices.
+- DoS and DDoS attacks impact system availability.
+- tcpdump helps analysts investigate network traffic.
+- Encryption helps protect data from interception attacks.
+- Defense in depth provides multiple layers of security protection.
+- Understanding attacker methods helps security analysts detect and prevent threats.
+
+---
+
+# Reflection
+This module expanded my understanding of how attackers exploit network weaknesses and the importance of monitoring network activity. Learning about packet analysis tools such as tcpdump and attacks like DDoS, IP spoofing, and on-path attacks helped connect networking concepts with real-world cybersecurity operations.
+Understanding attacker techniques is critical for identifying suspicious behavior, improving defensive strategies, and protecting organizational systems.
