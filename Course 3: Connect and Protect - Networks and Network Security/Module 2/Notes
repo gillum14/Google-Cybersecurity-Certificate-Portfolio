@@ -1,557 +1,647 @@
-# Course 3 - Module 2 Notes
+# Course 3 Module 2: Network Protocols, Wireless Security, and Network Security Tools
 
-## Playbooks
+## Overview
+This module focused on how devices communicate across networks using protocols, how wireless security has evolved, and how cybersecurity professionals use tools such as firewalls, proxies, VPNs, and subnetting to secure networks.
 
-### What is a Playbook?
-A playbook is a documented set of procedures that tells security teams exactly how to respond to specific cybersecurity incidents.
-
-Playbooks are:
-- Step-by-step response guides
-- Frequently updated ("living documents")
-- Collaborative documents maintained by security teams
-- Used to ensure consistent incident response
-
-### Why Playbooks Matter
-- Standardize incident response
-- Reduce mistakes during high-pressure situations
-- Ensure legal and regulatory compliance
-- Improve response speed
-- Preserve forensic evidence
-- Support business continuity
-
-### Common Reasons to Update Playbooks
-- Process failures or mistakes discovered
-- New laws or compliance requirements
-- New attack techniques
-- Changes in industry best practices
+Key topics:
+- Common network protocols and their functions
+- Network ports and communication methods
+- Wireless security protocols (WEP, WPA, WPA2, WPA3)
+- Network segmentation and subnetting
+- Firewalls, proxy servers, and VPNs
+- VPN protocols including WireGuard and IPSec
 
 ---
 
-## Common Incident Response Playbook Steps
-1. Preparation
-2. Detection
-3. Analysis
-4. Containment
-5. Eradication
-6. Recovery
-7. Post-incident review
+# Network Protocols
+
+## What Are Network Protocols?
+A network protocol is a set of rules that determines how devices communicate and exchange data across a network.
+
+Protocols define:
+- How data is formatted
+- How data is transmitted
+- How devices identify each other
+- How errors are handled
+
+Cybersecurity analysts must understand protocols because vulnerabilities within protocols can be exploited by attackers.
 
 ---
 
-## Business Continuity Plan
-A Business Continuity Plan (BCP) outlines how an organization continues operating after disruptions such as cyberattacks.
-Playbooks are created to support the organization's continuity plan.
+# Categories of Network Protocols
 
----
-
-## Playbooks + SIEM
-
-SIEM tools detect suspicious activity.
-
-Playbooks tell analysts:
-- What to investigate
-- What actions to take
-- Who performs each task
-- When actions should occur
-
-Example:
-- SIEM detects unusual login activity.
-- Analyst follows the playbook to investigate and respond.
-
----
-
-## Playbooks + SOAR
-
-SOAR automates repetitive security tasks.
-
-Example:
-- Too many failed login attempts
-- SOAR automatically locks the account
-- Analyst follows the playbook for next steps
-
-### SIEM vs SOAR
-
-| SIEM | SOAR |
-|------|------|
-| Detects threats | Automates responses |
-| Collects and analyzes logs | Executes predefined actions |
-| Requires analyst review | Reduces manual work |
-
----
-
-# Network Components
-
-## Network
-A collection of connected devices that communicate with one another.
-
----
-
-## Common Network Devices
-
-### Computers & Mobile Devices
-- Connect to networks
-- Have both MAC and IP addresses
-- Send and receive data packets
-
----
-
-### Firewall
-
-First line of network defense.
-
-Functions:
-- Monitors network traffic
-- Allows or blocks traffic
-- Enforces security rules
-
----
-
-### Server
-
-Provides services and resources to client devices.
+## Communication Protocols
+Used to establish and control communication between devices.
 
 Examples:
-- File server
-- DNS server
-- Email server
-
-Uses the Client-Server Model:
-Client → Request
-Server → Response
-
----
-
-### Hub
-
-Broadcasts incoming traffic to every connected device.
-
-Pros:
-- Simple
-
-Cons:
-- Poor security
-- Inefficient
-- Vulnerable to packet sniffing
-
-Mostly obsolete today.
-
----
-
-### Switch
-
-Preferred over hubs.
-
-Functions:
-- Sends packets only to intended device
-- Uses MAC address table
-- Improves speed
-- Improves security
-
-Operates at:
-- Data Link Layer
-
----
-
-### Router
-
-Connects different networks.
-
-Functions:
-- Routes packets using IP addresses
-- Connects LAN to WAN/Internet
-- Often includes firewall capabilities
-
-Operates at:
-- Network Layer
-
----
-
-### Modem
-
-Connects the local network to the Internet Service Provider (ISP).
-
-Converts:
-- Digital ↔ Analog signals
-
----
-
-### Wireless Access Point (WAP)
-
-Provides Wi-Fi connectivity using radio waves.
-
-Allows wireless devices to connect to the network.
-
----
-
-## Network Diagrams
-
-Network diagrams visually display:
-- Devices
-- Connections
-- Network architecture
-
-Security analysts use them to:
-- Understand network layout
-- Identify vulnerabilities
-- Plan security improvements
-
----
-
-# Cloud Computing
-
-## What is Cloud Computing?
-Using remote servers and services hosted on the internet instead of local hardware.
-
----
-
-## Cloud Service Provider (CSP)
-
-Companies that provide cloud services.
-
-Examples:
-- Google Cloud
-- Microsoft Azure
-- Amazon Web Services (AWS)
-
----
-
-## Types of Cloud Services
-
-### SaaS (Software as a Service)
-
-Ready-to-use software delivered online.
-
-Examples:
-- Gmail
-- Microsoft 365
-
----
-
-### IaaS (Infrastructure as a Service)
-
-Virtual hardware provided by the cloud.
-
-Examples:
-- Virtual servers
-- Storage
-- Networking
-
----
-
-### PaaS (Platform as a Service)
-
-Development platform for building applications.
-
-Developers create applications without managing infrastructure.
-
----
-
-## Hybrid Cloud
-
-Combination of:
-- On-premises infrastructure
-- Cloud services
-
-Most organizations use hybrid environments.
-
----
-
-## Multi-Cloud
-
-Using multiple cloud providers simultaneously.
-
-Example:
-- AWS + Azure
-
----
-
-## Software-Defined Networking (SDN)
-
-Virtual networking managed through software instead of physical devices.
-
-Includes:
-- Virtual routers
-- Virtual switches
-- Virtual firewalls
-
-Benefits:
-- Easier management
-- Faster deployment
-- Greater flexibility
-
----
-
-## Benefits of Cloud Computing
-
-### Reliability
-- High availability
-- Secure access
-- Minimal downtime
-
-### Cost Savings
-- No expensive hardware purchases
-- Reduced maintenance
-
-### Scalability
-- Quickly increase or decrease resources
-- Pay only for what is used
-
----
-
-# TCP/IP Model
-
-The TCP/IP model explains how data moves across networks.
-
-Contains 4 layers.
-
----
-
-## Layer 4 — Application Layer
-
-Responsible for:
-- User applications
-- Network requests
-
-Common Protocols:
-- HTTP
-- HTTPS
-- DNS
-- FTP
-- SMTP
-- SSH
-
----
-
-## Layer 3 — Transport Layer
-
-Responsible for:
-- Reliable delivery
-- Data segmentation
-- Flow control
-
-Protocols:
 - TCP
 - UDP
-
-### TCP
-- Connection-oriented
-- Reliable
-- Error checking
-- Retransmits lost packets
-
-### UDP
-- Connectionless
-- Faster
-- No delivery guarantee
-- Used for streaming and gaming
+- HTTP
+- DNS
 
 ---
 
-## Layer 2 — Internet Layer
+## Management Protocols
+Used to monitor, manage, and troubleshoot networks.
 
-Responsible for:
-- Routing packets
-- IP addressing
-
-Protocols:
-- IP
+Examples:
+- SNMP
 - ICMP
-
-ICMP reports:
-- Network errors
-- Connectivity issues
-- Dropped packets
+- DHCP
 
 ---
 
-## Layer 1 — Network Access Layer
+## Security Protocols
+Used to protect data through encryption.
 
-Responsible for:
-- Physical transmission
-- Local network communication
+Examples:
+- HTTPS
+- SSH
+- SFTP
+- IPSec
+- SSL/TLS
 
-Includes:
-- Cables
-- Hubs
-- Switches
-- Modems
+---
+
+# Common Communication Protocols
+
+## Transmission Control Protocol (TCP)
+
+Purpose:
+- Provides reliable communication between devices
+- Ensures data arrives correctly and in order
+
+TCP uses a three-way handshake:
+1. SYN - Device requests a connection
+2. SYN/ACK - Server acknowledges request
+3. ACK - Connection is established
+
+Layer:
+- Transport layer
+
+Common uses:
+- Web browsing
+- File transfers
+- Email
+
+---
+
+## User Datagram Protocol (UDP)
+
+Purpose:
+- Provides fast communication without establishing a connection first
+
+Advantages:
+- Faster than TCP
+
+Disadvantages:
+- Less reliable because delivery is not guaranteed
+
+Layer:
+- Transport layer
+
+Common uses:
+- DNS requests
+- Streaming
+- Online gaming
+
+---
+
+## Hypertext Transfer Protocol (HTTP)
+
+Purpose:
+- Allows communication between web browsers and web servers
+
+Port:
+- TCP 80
+
+Security:
+- Not encrypted
+
+Layer:
+- Application layer
+
+---
+
+## Hypertext Transfer Protocol Secure (HTTPS)
+
+Purpose:
+- Secure version of HTTP
 
 Uses:
-- ARP (Address Resolution Protocol)
-
----
-
-# OSI Model
-
-The OSI Model has 7 layers and provides a detailed view of network communication.
-
----
-
-## Layer 7 — Application
-
-User interaction with network applications.
-
-Examples:
-- HTTP
-- HTTPS
-- SMTP
-- DNS
-
----
-
-## Layer 6 — Presentation
-
-Responsible for:
-- Encryption
-- Compression
-- Data formatting
-
-Example:
 - SSL/TLS encryption
 
----
+Port:
+- TCP 443
 
-## Layer 5 — Session
+Security:
+- Encrypts data in transit
 
-Responsible for:
-- Opening connections
-- Maintaining sessions
-- Authentication
-- Checkpoints
-- Closing sessions
+Layer:
+- Application layer
 
 ---
 
-## Layer 4 — Transport
+## Domain Name System (DNS)
 
-Responsible for:
-- Data delivery
-- Segmentation
-- Flow control
+Purpose:
+- Converts domain names into IP addresses
 
-Protocols:
-- TCP
-- UDP
+Example:
 
----
+google.com
 
-## Layer 3 — Network
+↓
 
-Responsible for:
-- Routing packets
-- IP addressing
+142.x.x.x
 
-Uses routers.
+Port:
+- UDP 53
+- TCP 53 for large responses
 
----
+Layer:
+- Application layer
 
-## Layer 2 — Data Link
-
-Responsible for:
-- Communication within the local network
-- MAC addresses
-
-Uses switches.
+Security concern:
+- Attackers can manipulate DNS responses to redirect users to malicious websites.
 
 ---
 
-## Layer 1 — Physical
+# Management Protocols
 
-Responsible for:
-- Physical transmission of bits
+## Simple Network Management Protocol (SNMP)
 
-Includes:
-- Cables
-- Hubs
-- Electrical signals
+Purpose:
+- Monitors and manages network devices
 
----
+Can:
+- Check bandwidth usage
+- Monitor device performance
+- Change configurations
 
-# TCP/IP vs OSI
-
-| TCP/IP | OSI |
-|---------|-----|
-| 4 Layers | 7 Layers |
-| Practical implementation | Conceptual model |
-| Used on the Internet | Used for troubleshooting and education |
+Layer:
+- Application layer
 
 ---
 
-# Network Layer (OSI Layer 3)
+## Internet Control Message Protocol (ICMP)
 
-Responsible for:
-- Packet routing
-- IP addressing
-- Delivery between networks
+Purpose:
+- Reports network errors and connectivity issues
 
-Routers use information inside the IP header to forward packets.
+Common tool:
+- ping
 
----
+Used for:
+- Troubleshooting connectivity
+- Measuring latency
 
-# IPv4 Packet Header
-
-Important Fields:
-
-- Version
-- Header Length
-- Type of Service (ToS)
-- Total Length
-- Identification
-- Flags
-- Fragment Offset
-- Time To Live (TTL)
-- Protocol
-- Header Checksum
-- Source IP Address
-- Destination IP Address
-- Options
+Layer:
+- Internet layer
 
 ---
 
-## Time To Live (TTL)
+# Additional Network Protocols
 
-Prevents packets from looping forever.
+## Dynamic Host Configuration Protocol (DHCP)
 
-Each router decreases TTL by 1.
+Purpose:
+- Automatically assigns network information to devices
 
-When TTL reaches 0:
-- Packet is discarded
-- ICMP error is returned
+Provides:
+- IP address
+- Default gateway
+- DNS server information
 
----
+Ports:
+- Server: UDP 67
+- Client: UDP 68
 
-# IPv4 vs IPv6
-
-## IPv4
-
-- 32-bit addresses
-- Approximately 4.3 billion addresses
-- Example:
-198.51.100.0
+Layer:
+- Application layer
 
 ---
 
-## IPv6
+## Address Resolution Protocol (ARP)
 
-- 128-bit addresses
-- Approximately 340 undecillion addresses
-- Example:
-2002:0db8::ff21:0023:1234
+Purpose:
+- Maps IP addresses to MAC addresses
+
+Example:
+
+IP Address
+
+↓
+
+MAC Address
+
+Used for:
+- Communication within a local network
+
+Port:
+- None
+
+Layer:
+- Network access layer
+
+---
+
+## Telnet
+
+Purpose:
+- Remote system access through command line
+
+Port:
+- TCP 23
+
+Security:
+- Sends data in plaintext
+
+Status:
+- Outdated and insecure
+
+---
+
+## Secure Shell (SSH)
+
+Purpose:
+- Secure remote system access
+
+Port:
+- TCP 22
+
+Security:
+- Encrypts communication
+
+Replacement for:
+- Telnet
+
+---
+
+# Email Protocols
+
+## POP3 (Post Office Protocol)
+
+Purpose:
+- Downloads emails from a mail server to a device
+
+Ports:
+- 110 = Unencrypted
+- 995 = SSL/TLS encrypted
+
+Characteristics:
+- Emails are stored locally after download
+- Less effective for multiple devices
+
+---
+
+## IMAP (Internet Message Access Protocol)
+
+Purpose:
+- Allows users to access email stored on a server
+
+Ports:
+- 143 = Unencrypted
+- 993 = SSL/TLS encrypted
+
+Characteristics:
+- Syncs email across multiple devices
+- Keeps messages on the server
+
+---
+
+## SMTP (Simple Mail Transfer Protocol)
+
+Purpose:
+- Sends and routes email messages
+
+Ports:
+- 25 = Unencrypted
+- 587 = TLS encrypted
+
+Remember:
+SMTP = Send Mail
+
+---
+
+# Network Address Translation (NAT)
+
+Purpose:
+- Allows multiple private devices to share one public IP address
+
+Example:
+
+Laptop:
+192.168.1.25
+
+↓
+
+Router
+
+↓
+
+Public IP Address
 
 Benefits:
-- Vast address space
-- More efficient routing
-- Fewer address conflicts
+- Conserves public IP addresses
+- Adds privacy by hiding internal devices
+
+---
+
+# Private IP Address Ranges
+
+Private IP addresses include:
+
+10.0.0.0 - 10.255.255.255
+
+172.16.0.0 - 172.31.255.255
+
+192.168.0.0 - 192.168.255.255
+
+---
+
+# Wireless Security Protocols
+
+## Wired Equivalent Privacy (WEP)
+
+Released:
+- 1999
+
+Purpose:
+- Original wireless security protocol
+
+Security:
+- Weak encryption
+- Easily compromised
+
+Status:
+- Deprecated
+
+---
+
+## Wi-Fi Protected Access (WPA)
+
+Released:
+- 2003
+
+Improved:
+- WEP vulnerabilities
+
+Uses:
+- TKIP encryption
+
+Still vulnerable to attacks.
+
+---
+
+## WPA2
+
+Released:
+- 2004
+
+Improvements:
+- Uses AES encryption
+- Uses CCMP authentication
+
+Modes:
+
+### WPA2 Personal
+- Home networks
+- Uses shared password
+
+### WPA2 Enterprise
+- Business networks
+- Individual authentication
+- Centralized access control
+
+---
+
+## WPA3
+
+Released:
+- 2018
+
+Improvements:
+- Protects against KRACK attacks
+- Uses SAE authentication
+- Stronger encryption
+
+Current recommended wireless security standard.
+
+---
+
+# Subnetting and CIDR
+
+## Subnetting
+
+Purpose:
+- Divides a large network into smaller logical networks
+
+Benefits:
+- Improves efficiency
+- Improves security
+- Creates security zones
+
+---
+
+## CIDR (Classless Inter-Domain Routing)
+
+Purpose:
+- Assigns subnet masks using IP prefixes
+
+Example:
+
+192.168.1.0/24
+
+The /24 identifies the network prefix.
+
+Benefits:
+- Conserves IP addresses
+- Improves routing efficiency
+
+---
+
+# Network Security Tools
+
+## Firewalls
+
+Purpose:
+- Monitor and filter network traffic
+
+Firewalls can filter based on:
+- IP addresses
+- Ports
+- Applications
+
+---
+
+## Stateless Firewall
+
+Characteristics:
+- Uses predefined rules
+- Does not track connections
+- Evaluates each packet individually
+
+---
+
+## Stateful Firewall
+
+Characteristics:
+- Tracks active connections
+- Maintains a state table
+- More advanced than stateless firewalls
+
+---
+
+## Next Generation Firewall (NGFW)
+
+Advanced firewall capabilities:
+
+- Deep packet inspection
+- Intrusion prevention
+- Malware detection
+- Application awareness
+- URL filtering
+- DNS filtering
+
+---
+
+# Proxy Servers
+
+## Forward Proxy
+
+Purpose:
+- Controls internal users accessing external resources
+
+Example:
+
+User
+
+↓
+
+Forward Proxy
+
+↓
+
+Internet
+
+Benefits:
+- Filters websites
+- Adds privacy
+
+---
+
+## Reverse Proxy
+
+Purpose:
+- Protects internal servers from external requests
+
+Example:
+
+Internet
+
+↓
+
+Reverse Proxy
+
+↓
+
+Internal Server
+
+---
+
+# Virtual Private Networks (VPNs)
+
+Purpose:
+- Creates an encrypted tunnel for network communication
+
+Benefits:
+- Encrypts data in transit
+- Hides IP address
+- Protects users on public networks
+
+Uses:
+- Encapsulation
+
+---
+
+# VPN Types
+
+## Remote Access VPN
+
+Purpose:
+- Connects individual users to a private network
+
+Example:
+Remote employee accessing company systems
+
+---
+
+## Site-to-Site VPN
+
+Purpose:
+- Connects entire networks together
+
+Example:
+Company headquarters connected to branch offices
+
+Common protocol:
+- IPSec
+
+---
+
+# VPN Protocols
+
+## WireGuard
+
+Characteristics:
+- Modern VPN protocol
+- Open source
+- Fast performance
+- Simple configuration
+
+Used for:
+- Remote access
+- Site-to-site VPNs
+
+---
+
+## IPSec
+
+Characteristics:
+- Older VPN protocol
+- Widely supported
+- Heavily tested
+
+Common use:
+- Enterprise site-to-site VPNs
+
+---
+
+# Important Ports to Remember
+
+| Protocol | Port |
+|----------|------|
+| HTTP | 80 |
+| HTTPS | 443 |
+| DNS | 53 |
+| DHCP Server | 67 |
+| DHCP Client | 68 |
+| SSH | 22 |
+| Telnet | 23 |
+| SMTP | 25 / 587 |
+| POP3 | 110 / 995 |
+| IMAP | 143 / 993 |
+| SFTP | 22 |
 
 ---
 
 # Key Takeaways
-
-- Playbooks standardize incident response.
-- SIEM detects threats; SOAR automates responses.
-- Switches are more secure than hubs.
-- Routers connect different networks using IP addresses.
-- Cloud computing improves scalability, reliability, and cost efficiency.
-- TCP/IP has 4 layers; OSI has 7.
-- TCP provides reliable communication; UDP prioritizes speed.
-- IPv6 solves IPv4 address exhaustion and improves routing.
+- Network protocols define how devices communicate.
+- Protocols fall into three categories: communication, management, and security.
+- TCP provides reliable communication while UDP provides faster communication.
+- HTTPS, SSH, and SFTP protect data through encryption.
+- WPA3 is the strongest modern wireless security protocol.
+- Subnetting improves network efficiency and security.
+- Firewalls, proxies, and VPNs protect networks from unauthorized access.
+- Understanding ports and protocols is essential for cybersecurity analysts.
