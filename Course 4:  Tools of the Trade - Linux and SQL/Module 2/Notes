@@ -1,1 +1,218 @@
+# Google Cybersecurity Certificate
+## Course 4: Linux and SQL
+### Module 2: Linux Architecture and Command Line
 
+*Topics Covered:** Linux architecture, distributions, package management, shells, virtualization labs, and Linux command-line fundamentals.
+
+---
+
+# Linux Architecture Explained
+Understanding Linux architecture is important for cybersecurity professionals because it explains how system components interact and how security analysts can identify and troubleshoot issues.
+The Linux architecture follows this workflow:
+
+**User → Applications → Shell → Filesystem Hierarchy Standard → Kernel → Hardware**
+
+---
+
+## Linux Components
+
+### User
+The user is the individual interacting with the computer system.
+Linux is a **multi-user operating system**, meaning multiple users can access and manage system resources simultaneously.
+
+---
+
+### Applications
+Applications are programs designed to perform specific tasks.
+
+Examples:
+- Web browsers
+- Email clients
+- Security tools
+- System utilities
+
+Linux commonly uses **package managers** to install, update, and remove applications.
+
+---
+
+### Shell
+The shell is the **command-line interpreter** that allows users to communicate with the operating system.
+
+The shell acts as a translator between the user and the computer by:
+1. Receiving commands from the user
+2. Translating those commands
+3. Communicating with the kernel
+4. Returning results
+
+The shell is heavily used by cybersecurity professionals because it allows efficient system management and automation.
+
+---
+
+### Filesystem Hierarchy Standard (FHS)
+The Filesystem Hierarchy Standard organizes how data is stored within Linux systems.
+
+It defines:
+- Directory structure
+- File locations
+- Storage organization
+
+Directories are locations used to organize files and other directories.
+
+---
+
+### Kernel
+The kernel is the core component of Linux.
+
+Responsibilities include:
+- Managing system processes
+- Allocating memory
+- Communicating between software and hardware
+- Controlling hardware resources
+
+The kernel allows applications to interact with system hardware efficiently.
+
+---
+
+### Hardware
+Hardware consists of the physical components of a computer.
+
+Hardware is divided into two categories:
+
+## Peripheral Devices
+Hardware attached to the computer that is not required for system operation.
+
+Examples:
+- Monitor
+- Keyboard
+- Mouse
+- Printer
+
+## Internal Hardware
+Components required for the computer to function.
+
+Examples:
+### Central Processing Unit (CPU)
+
+The CPU is the main processor responsible for executing instructions and performing computing tasks.
+
+### Random Access Memory (RAM)
+RAM provides temporary short-term memory.
+
+Characteristics:
+- Stores active data while programs are running
+- Data is erased when power is removed
+
+### Hard Drive
+The hard drive provides long-term storage.
+
+Stores:
+- Operating system files
+- Applications
+- User files
+
+Data remains available after the computer is powered off.
+
+---
+
+# Linux Distributions
+Linux distributions are different versions of Linux built for specific purposes.
+
+Common cybersecurity-related distributions include:
+
+---
+
+## Kali Linux
+Kali Linux is an open-source Debian-based distribution designed for cybersecurity.
+
+Common uses:
+- Penetration testing
+- Digital forensics
+- Vulnerability assessment
+
+Includes many pre-installed security tools.
+
+---
+
+## Ubuntu
+Ubuntu is an open-source, user-friendly Linux distribution.
+
+Security relevance:
+- Widely used in organizations
+- Common in cloud environments
+- Large support community
+
+Ubuntu includes:
+- Graphical interface (GUI)
+- Command-line interface (CLI)
+
+---
+
+## Parrot
+Parrot is a Debian-based Linux distribution designed for security and privacy.
+
+Common uses:
+- Penetration testing
+- Digital forensics
+- Security research
+
+---
+
+## Red Hat Enterprise Linux (RHEL)
+Red Hat is an enterprise-focused Linux distribution.
+
+Characteristics:
+- Subscription-based
+- Professional support
+- Common in business environments
+
+---
+
+## CentOS
+CentOS is an open-source distribution related to Red Hat.
+
+Characteristics:
+- Uses Red Hat source code
+- Community supported
+- Enterprise-focused
+
+---
+
+# Linux Package Management
+A **package** is software that can be installed and combined with other packages to create applications.
+
+Packages include:
+- Application files
+- Dependencies
+- Required configuration files
+
+A **package manager** helps users:
+- Install software
+- Update software
+- Remove software
+- Manage dependencies
+
+Keeping packages updated helps maintain system security through vulnerability patches.
+
+---
+
+# Common Linux Package Managers
+
+## Debian-Based Systems
+
+Examples:
+- Kali Linux
+- Ubuntu
+- Parrot
+
+Common tools:
+
+### dpkg
+Used to install and manage `.deb` packages.
+
+### Advanced Package Tool (APT)
+
+Command-line package management tool.
+
+Example:
+```bash
+sudo apt install package-name
