@@ -102,4 +102,4 @@ Note: some hackers span more than one category. New/unskilled threat actors may 
 
 ## Personal Reflection
 
-This module sharpened my understanding of how attack types map to the CISSP domains and how differently motivated threat actors can be — from APTs after intellectual property to hacktivists pursuing a cause. Separating the concept of a "hacker" from "threat actor" was a useful distinction: skill and intent aren't the same thing, and not every hacker is malicious. That framing will be useful when I'm assessing risk and trying to anticipate who might target a given system and why.
+This module sharpened my understanding of how attack types map to the CISSP domains and how differently motivated threat actors can be, from APTs after intellectual property to hacktivists pursuing a cause. Separating the concept of a "hacker" from "threat actor" was a useful distinction: skill and intent aren't the same thing, and not every hacker is malicious. That framing will be useful when I'm assessing risk and trying to anticipate who might target a given system and why.
